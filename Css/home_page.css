@@ -936,3 +936,9 @@ div[class*="column"] > div[class*="part"] .content {
 #beauty-drop-down:checked ~ .beauty-drop-down {
   display: block;
 }
+.wishlist {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
