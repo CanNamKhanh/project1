@@ -942,3 +942,7 @@ div[class*="column"] > div[class*="part"] .content {
   align-items: center;
   cursor: pointer;
 }
+.menu > div > img {
+  width: 12px;
+  height: 12px;
+}
