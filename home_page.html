@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./Css/home_page.css" />
+    <link rel="stylesheet" href="./Css/home_page_responsive.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./Favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./Favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./Favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./Favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./Favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./Favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./Favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./Favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./Favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <input type="radio" id="departments-drop-down" hidden name="drop-down" />
+
+    <input type="radio" id="open-department-1" hidden name="open-department" />
+    <input type="radio" id="open-department-2" hidden name="open-department" />
+    <input type="radio" id="open-department-3" hidden name="open-department" />
+    <input type="radio" id="open-department-4" hidden name="open-department" />
+    <input type="radio" id="open-department-5" hidden name="open-department" />
+    <input type="radio" id="open-department-6" hidden name="open-department" />
+    <input type="radio" id="open-department-7" hidden name="open-department" />
+    <input type="radio" id="open-department-8" hidden name="open-department" />
+    <input type="radio" id="open-department-9" hidden name="open-department" />
+    <input type="radio" id="open-department-10" hidden name="open-department" />
+    <input type="radio" id="open-department-11" hidden name="open-department" />
+    <input type="radio" id="open-department-12" hidden name="open-department" />
+    <input type="radio" id="open-department-13" hidden name="open-department" />
+    <input type="radio" id="open-department-14" hidden name="open-department" />
+    <input type="radio" id="grocery-drop-down" hidden name="drop-down" />
+    <input type="radio" id="beauty-drop-down" hidden name="drop-down" />
+    <input type="checkbox" id="open-menu" hidden />
+    <div class="overlay" hidden>
+      <div class="content-box">
+        <label for="open-menu" class="open">
+          <img src="./Icons/home_page/arrowleft.png" alt="" />
+        </label>
+        <div class="card">
+          <div class="title">
+            <img src="./Icons/home_page/Cart.png" alt="" />
+            <p style="font-size: 1.5rem; font-weight: 500">Card</p>
+          </div>
+          <p style="font-size: 1.5rem; font-weight: 500">3</p>
+        </div>
+        <!-- End .card -->
+        <div class="favorite">
+          <label class="title" for="wishlist">
+            <img src="./Icons/home_page/Heart.png" alt="" />
+            <p style="font-size: 1.5rem; font-weight: 500">Favorite</p>
+          </label>
+          <p style="font-size: 1.5rem; font-weight: 500">3</p>
+        </div>
+        <!-- End .favorite -->
+        <div class="departments">
+          <label
+            for="departments-drop-down"
+            style="font-size: 1.5rem; font-weight: 500"
+            >Departments</label
+          >
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .departments -->
+        <div class="grocery">
+          <label
+            for="grocery-drop-down"
+            style="font-size: 1.5rem; font-weight: 500"
+            >Grocery</label
+          >
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .grocery -->
+        <div class="beauty">
+          <label
+            for="beauty-drop-down"
+            style="font-size: 1.5rem; font-weight: 500"
+            >Beauty</label
+          >
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .beauty -->
+      </div>
+    </div>
+    <!-- End .overlay -->
+    <header>
+      <div class="content-box">
+        <div class="shop-info">
+          <label for="open-menu" class="open-menu" hidden>
+            <img src="./Icons/home_page/open.png" alt="" />
+          </label>
+          <a class="logo">
+            <img src="./Icons/login_and_signup_page/logo.png" alt="" />
+            <h1>grocerymart</h1>
+          </a>
+          <!-- End .logo -->
+          <nav class="menu">
+            <div class="departments">
+              <label for="departments-drop-down">Departments</label>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .departments -->
+            <div class="grocery">
+              <label for="grocery-drop-down">Grocery</label>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .grocery -->
+            <div class="beauty">
+              <label for="beauty-drop-down">Beauty</label>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .beauty -->
+          </nav>
+          <!-- End .menu -->
+        </div>
+        <!-- End .shop-info -->
+        <div class="user-info">
+          <div class="search">
+            <img src="./Icons/home_page/Search.png" alt="" />
+          </div>
+          <!-- End .search -->
+          <div class="shopping">
+            <label class="wishlist" for="wishlist">
+              <img src="./Icons/home_page/Heart.png" alt="" />
+              <p>03</p>
+            </label>
+            <!-- End .wishlist -->
+            <span class="space-between"></span>
+            <label class="cart" for="open-your-items">
+              <img src="./Icons/home_page/Cart.png" alt="" />
+              <p>$65.42</p>
+            </label>
+            <!-- End .cart -->
+          </div>
+          <!-- End .shopping -->
+          <div class="avatar">
+            <img src="./Images/home_page/Avatar.png" alt="" />
+          </div>
+          <!-- End .avatar -->
+        </div>
+        <!-- End .user-info -->
+      </div>
+      <!-- End .content-box -->
+    </header>
+    <!-- End header -->
+    <div class="departments-drop-down" hidden>
+      <img src="./Icons/home_page/arrowup.png" alt="" />
+      <div class="content-box">
+        <div class="departments-heading">
+          <div class="title">
+            <img src="./Icons/home_page/alldpm.png" alt="" />
+            <h2>All Departments</h2>
+          </div>
+          <!-- End .title -->
+          <div class="content">
+            <label for="open-department-1" class="open-department-1"
+              >Savings & Featured Shops</label
+            >
+            <label for="open-department-2" class="open-department-2"
+              >Electronics</label
+            >
+            <label for="open-department-3" class="open-department-3"
+              >Clothing, Shoes & Accessories</label
+            >
+            <label for="open-department-4" class="open-department-4"
+              >Home, Furniture & Appliances</label
+            >
+            <label for="open-department-5" class="open-department-5"
+              >Toys & Video Games</label
+            >
+            <label for="open-department-6" class="open-department-6"
+              >Home Improvement</label
+            >
+            <label for="open-department-7" class="open-department-7"
+              >Baby</label
+            >
+            <label for="open-department-8" class="open-department-8"
+              >Household Essentials</label
+            >
+            <label for="open-department-9" class="open-department-9"
+              >Personal Care</label
+            >
+            <label for="open-department-10" class="open-department-10"
+              >Patio & Garden</label
+            >
+            <label for="open-department-11" class="open-department-11"
+              >Sports & Outdoors</label
+            >
+            <label for="open-department-12" class="open-department-12"
+              >Gift Cards</label
+            >
+            <label for="open-department-13" class="open-department-13"
+              >Auto, Tires and Industrial</label
+            >
+            <label for="open-department-14" class="open-department-14"
+              >Movies, Music & Books</label
+            >
+          </div>
+          <!-- End .content -->
+        </div>
+        <!-- End .departments-heading -->
+        <span class="space-between"></span>
+        <div class="departments-content">
+          <div class="column1">
+            <div class="part1">
+              <div class="title">
+                <img src="./Icons/home_page/tv.png" alt="" />
+                <h2>TV & Video</h2>
+              </div>
+              <div class="content">
+                <label for="">Shop all TVs</label>
+                <label for="">TVs by Size</label>
+                <label for="">Smart TVs</label>
+                <label for="">Roku TVs</label>
+                <label for="">Streaming</label>
+                <label for="">TV Mounts & Accessories</label>
+                <label for="">DVD & Blu-Ray Players</label>
+              </div>
+            </div>
+            <!-- End .part1 -->
+            <div class="part2">
+              <div class="title">
+                <img src="./Icons/home_page/tech.png" alt="" />
+                <h2>Wearable Technology</h2>
+              </div>
+              <div class="content">
+                <label for="">Galaxy Watch</label>
+                <label for="">Apple Watch</label>
+                <label for="">Fitness Trackers</label>
+                <label for="">Virtual Reality</label>
+                <label for="">Headphones</label>
+              </div>
+            </div>
+            <!-- End .part2 -->
+          </div>
+          <!-- End .conlumn1 -->
+          <div class="column2">
+            <div class="part1">
+              <div class="title">
+                <img src="./Icons/home_page/computer.png" alt="" />
+                <h2>Computers</h2>
+              </div>
+              <div class="content">
+                <label for="">Shop All Computers</label>
+                <label for="">Laptops</label>
+                <label for="">PC Gaming</label>
+                <label for="">Monitors</label>
+                <label for="">Chromebook</label>
+                <label for="">Printers & Ink</label>
+                <label for="">Shop all TVs</label>
+                <label for="">Computer Accessories</label>
+                <label for="">Desktops</label>
+                <label for="">Tax Software</label>
+                <label for="">Computer Software</label>
+                <label for="">PC Finder</label>
+              </div>
+            </div>
+            <!-- End .part1 -->
+          </div>
+          <!-- End .conlumn2 -->
+          <div class="column3">
+            <div class="part1">
+              <div class="title">
+                <img src="./Icons/home_page/save.png" alt="" />
+                <h2>Savings</h2>
+              </div>
+              <div class="content">
+                <label for="">Tech Savings</label>
+                <label for="">Overstock Savings</label>
+                <label for="">Tech Rollbacks</label>
+              </div>
+            </div>
+            <!-- End .part1 -->
+            <div class="part2">
+              <div class="title">
+                <img src="./Icons/home_page/phone.png" alt="" />
+                <h2>Cell Phones</h2>
+              </div>
+              <div class="content">
+                <label for="">Wireless Deals</label>
+                <label for="">5G Phones</label>
+                <label for="">Prepaid Phones & Plans</label>
+                <label for="">Refurbished Phones</label>
+                <label for="">iPhone Accessories</label>
+                <label for="">Cases & Screen Protectors</label>
+                <label for="">Walmart Protection Plan</label>
+                <label for="">Unlocked Phones</label>
+              </div>
+            </div>
+            <!-- End .part2 -->
+          </div>
+          <!-- End .conlumn3 -->
+        </div>
+        <!-- End .departments-content -->
+      </div>
+      <!-- End .content-box -->
+    </div>
+    <!-- End .departments-drop-down -->
+    <div class="grocery-drop-down">
+      <img src="./Icons/home_page/arrowup.png" alt="" />
+      <div class="content-box">
+        <div class="column1">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/shop.png" alt="" />
+              <h2>Grocery</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">Grilling Foods</label>
+              <label for="">Spring Flavors</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+          <div class="part2">
+            <div class="title">
+              <img src="./Icons/home_page/fruit.png" alt="" />
+              <h2>Fresh Produce</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">Celebrate Salad Month</label>
+              <label for="">Healthy Living</label>
+              <label for="">Fresh Flowers</label>
+              <label for="">Chilled Dressing</label>
+              <label for="">Fresh Fruit</label>
+              <label for="">Salad Kits & Bowls</label>
+              <label for="">Organic Produce</label>
+              <label for="">Fresh Vegetables</label>
+            </div>
+          </div>
+          <!-- End .part2 -->
+        </div>
+        <!-- End .conlumn1 -->
+        <div class="column2">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/bakery.png" alt="" />
+              <h2>Bakery & Bread</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">New in Bakery</label>
+              <label for="">Sliced Bread</label>
+              <label for="">Rolls & Buns</label>
+              <label for="">Tortillas</label>
+              <label for="">Breakfast Breads</label>
+              <label for="">Pies</label>
+              <label for="">Cookies & Brownies</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+          <div class="part2">
+            <div class="title">
+              <img src="./Icons/home_page/frozen.png" alt="" />
+              <h2>Frozen</h2>
+            </div>
+            <div class="content">
+              <label for="">Frozen Breakfast</label>
+              <label for="">Frozen Potatoes</label>
+              <label for="">Frozen Meals & Snacks</label>
+            </div>
+          </div>
+          <!-- End .part2 -->
+        </div>
+        <!-- End .conlumn2 -->
+        <div class="column3">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/snack.png" alt="" />
+              <h2>Snacks</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">Chips</label>
+              <label for="">Popcorn & Pretzels</label>
+              <label for="">Crackers</label>
+              <label for="">Salsa & Dips</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+          <div class="part2">
+            <div class="title">
+              <img src="./Icons/home_page/candy.png" alt="" />
+              <h2>Candy</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">Better for You</label>
+              <label for="">Chocolate</label>
+              <label for="">Sugar Free Candy</label>
+              <label for="">Gum</label>
+              <label for="">Mints</label>
+              <label for="">On-the-Go</label>
+            </div>
+          </div>
+          <!-- End .part2 -->
+        </div>
+        <!-- End .conlumn3 -->
+        <div class="column4">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/coffe.png" alt="" />
+              <h2>Cocktails & Mixes Coffee</h2>
+            </div>
+            <div class="content">
+              <label for="">Ground Coffee</label>
+              <label for="">Whole Bean Coffee</label>
+              <label for="">Coffee Pods</label>
+              <label for="">Instant Coffee</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+          <div class="part2">
+            <div class="title">
+              <img src="./Icons/home_page/juice.png" alt="" />
+              <h2>Beverages</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">Water</label>
+              <label for="">Soft Drinks</label>
+              <label for="">Fruit Juice</label>
+              <label for="">Sports Drinks</label>
+              <label for="">Energy Drinks</label>
+              <label for="">Tea</label>
+              <label for="">Hot Chocolate & Cocoa</label>
+            </div>
+          </div>
+          <!-- End .part2 -->
+        </div>
+        <!-- End .conlumn4 -->
+      </div>
+      <!-- End .content-box -->
+    </div>
+    <!-- End .grocery-drop-down -->
+    <div class="beauty-drop-down">
+      <img src="./Icons/home_page/arrowup.png" alt="" />
+      <div class="content-box">
+        <div class="column1">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/shop.png" alt="" />
+              <h2>Featured Shops</h2>
+            </div>
+            <div class="content">
+              <label for="">Featured Shops</label>
+              <label for="">BeautySpaceNK</label>
+              <label for="">Equate Beauty</label>
+              <label for="">Beauty Deals</label>
+              <label for="">Walmart Exclusives</label>
+              <label for="">Luxury Beauty Deals</label>
+              <label for="">New Arrivals</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+          <div class="part2">
+            <div class="title">
+              <img src="./Icons/home_page/lipstick.png" alt="" />
+              <h2>Trending in Beauty</h2>
+            </div>
+            <div class="content">
+              <label for="">Trending Beauty Products</label>
+              <label for="">Celebrate Earth Day</label>
+              <label for="">Prom-ready Beauty</label>
+              <label for="">Summer Beauty</label>
+              <label for="">Travel Size & Minis</label>
+            </div>
+          </div>
+          <!-- End .part2 -->
+        </div>
+        <!-- End .column1 -->
+        <div class="column2">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/start2.png" alt="" />
+              <h2>Featured Brands</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">New in Bakery</label>
+              <label for="">Sliced Bread</label>
+              <label for="">Rolls & Buns</label>
+              <label for="">Tortillas</label>
+              <label for="">Breakfast Breads</label>
+              <label for="">Pies</label>
+              <label for="">Cookies & Brownies</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+          <div class="part2">
+            <div class="title">
+              <img src="./Icons/home_page/frozen2.png" alt="" />
+              <h2>Communities to Support</h2>
+            </div>
+            <div class="content">
+              <label for="">Black Owned Beauty</label>
+              <label for="">LatinX Owned Beauty</label>
+              <label for="">AAPI Owned Beauty</label>
+            </div>
+          </div>
+          <!-- End .part2 -->
+        </div>
+        <!-- End .column2 -->
+        <div class="column3">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/premium.png" alt="" />
+              <h2>Premium Beauty</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">Hair Color</label>
+              <label for="">Hair Care</label>
+              <label for="">Skincare</label>
+              <label for="">Fragrance</label>
+              <label for="">Makeup</label>
+              <label for="">Beauty Tech & Tools</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+        </div>
+        <!-- End .column3 -->
+        <div class="column4">
+          <div class="part1">
+            <div class="title">
+              <img src="./Icons/home_page/men.png" alt="" />
+              <h2>Beauty</h2>
+            </div>
+            <div class="content">
+              <label for="">Shop All</label>
+              <label for="">Men's Grooming</label>
+              <label for="">Bath & Body</label>
+              <label for="">Beauty Tech & Tools</label>
+              <label for="">Makeup</label>
+              <label for="">Fragrance</label>
+              <label for="">Nail Care</label>
+              <label for="">Hair Care</label>
+              <label for="">Hair Color</label>
+              <label for="">Skincare</label>
+            </div>
+          </div>
+          <!-- End .part1 -->
+        </div>
+        <!-- End .column4 -->
+      </div>
+      <!-- End .content-box -->
+    </div>
+    <!-- End .beauty-drop-down -->
+    <div class="container">
+      <div class="main-banner">
+        <img src="./Images/home_page/main-banner.png" alt="" />
+      </div>
+      <!-- End .main-banner -->
+      <div class="category-browser">
+        <div class="title">
+          <h2>Browse Categories</h2>
+        </div>
+        <div class="categories">
+          <a class="item1">
+            <div class="content-box">
+              <img src="./Images/home_page/cfblend.png" alt="cfblend" />
+              <div class="info">
+                <div class="prize">$24 - $150</div>
+                <div class="des">New sumatra mandeling coffe blend</div>
+              </div>
+            </div>
+          </a>
+          <!-- End .item1 -->
+          <a class="item2">
+            <div class="content-box">
+              <img src="./Images/home_page/robustabean.png" alt="robustabean" />
+              <div class="info">
+                <div class="prize">$37 - $160</div>
+                <div class="des">Espresso arabica and robusta beans</div>
+              </div>
+            </div>
+          </a>
+          <!-- End .item2 -->
+          <a class="item3">
+            <div class="content-box">
+              <img src="./Images/home_page/beancfblend.png" alt="cfblend" />
+              <div class="info">
+                <div class="prize">$32 - $160</div>
+                <div class="des">Lavazza top class whole bean coffe blend</div>
+              </div>
+            </div>
+          </a>
+          <!-- End .item3 -->
+        </div>
+        <!-- End .categories -->
+      </div>
+      <!-- End .category-browser -->
+      <div class="cf-info">
+        <div class="toolbar">
+          <h2 class="title">Total LavAzza 1320</h2>
+          <div class="filter-panel">
+            <button>
+              <p>Filter</p>
+              <img src="./Icons/home_page/Filter.png" alt="filter" />
+            </button>
+          </div>
+          <!-- End .filter-panel -->
+        </div>
+        <!-- End .toolbar -->
+        <div class="categories">
+          <a href="#" class="item1">
+            <div class="content-box">
+              <div class="img">
+                <img src="./Images/home_page/cfbeanbox.png" alt="cfbeanbox" />
+                <div class="heart-box">
+                  <img src="./Icons/home_page/Heart.png" alt="heart" />
+                </div>
+              </div>
+              <!-- End .img -->
+              <div class="des">
+                <h3 class="name">
+                  Coffe Beans - Espresso Arabica and Robusta Beans
+                </h3>
+                <p class="brand">Lavazza</p>
+                <div class="product-meta">
+                  <div class="prize">$47.00</div>
+                  <div class="rating">
+                    <img src="./Icons/home_page/Star.png" alt="star" />
+                    <p>4.3</p>
+                  </div>
+                </div>
+                <!-- End .product-meta -->
+              </div>
+              <!-- End .des -->
+            </div>
+          </a>
+          <!-- End .item1 -->
+          <a href="#" class="item2">
+            <div class="content-box">
+              <div class="img">
+                <img
+                  src="./Images/home_page/italianespresso.png"
+                  alt="cfbeanbox"
+                />
+                <div class="heart-box">
+                  <img src="./Icons/home_page/Heart.png" alt="heart" />
+                </div>
+              </div>
+              <!-- End .img -->
+              <div class="des">
+                <h3 class="name">
+                  Lavazza Coffee Blends - Try the Italian Espresso
+                </h3>
+                <p class="brand">Lavazza</p>
+                <div class="product-meta">
+                  <div class="prize">$53.00</div>
+                  <div class="rating">
+                    <img src="./Icons/home_page/Star.png" alt="star" />
+                    <p>3.4</p>
+                  </div>
+                </div>
+                <!-- End .product-meta -->
+              </div>
+              <!-- End .des -->
+            </div>
+          </a>
+          <!-- End .item2 -->
+          <a href="#" class="item3">
+            <div class="content-box">
+              <div class="img">
+                <img
+                  src="./Images/home_page/blacktinbox.png"
+                  alt="blacktinbox"
+                />
+                <img src="./Icons/home_page/RedHeart.svg" alt="heart" />
+              </div>
+              <!-- End .img -->
+              <div class="des">
+                <h3 class="name">
+                  Lavazza - Caffè Espresso Black Tin - Ground coffee
+                </h3>
+                <p class="brand">welikecoffee</p>
+                <div class="product-meta">
+                  <div class="prize">$99.99</div>
+                  <div class="rating">
+                    <img src="./Icons/home_page/Star.png" alt="star" />
+                    <p>5.0</p>
+                  </div>
+                </div>
+                <!-- End .product-meta -->
+              </div>
+              <!-- End .des -->
+            </div>
+          </a>
+          <!-- End .item3 -->
+          <a href="#" class="item4">
+            <div class="content-box">
+              <div class="img">
+                <img
+                  src="./Images/home_page/moutaingrownbox.png"
+                  alt="moutaingrownbox"
+                />
+                <div class="heart-box">
+                  <img src="./Icons/home_page/Heart.png" alt="heart" />
+                </div>
+              </div>
+              <!-- End .img -->
+              <div class="des">
+                <h3 class="name">
+                  Qualità Oro Mountain Grown - Espresso Coffee Beans
+                </h3>
+                <p class="brand">Lavazza</p>
+                <div class="product-meta">
+                  <div class="prize">$38.65</div>
+                  <div class="rating">
+                    <img src="./Icons/home_page/Star.png" alt="star" />
+                    <p>4.4</p>
+                  </div>
+                </div>
+                <!-- End .product-meta -->
+              </div>
+              <!-- End .des -->
+            </div>
+          </a>
+          <!-- End .item4 -->
+        </div>
+        <!-- End .categories -->
+      </div>
+      <!-- End .cf-info -->
+    </div>
+    <!-- End .container -->
+  </body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./Css/profile_page.css" />
+    <link rel="stylesheet" href="./Css/profile_page-responsive.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./Favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./Favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./Favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./Favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./Favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./Favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./Favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./Favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./Favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <input type="checkbox" id="add-new-card" name="add-new-card" hidden />
+    <input type="checkbox" name="personal-info" id="personal-info" hidden />
+    <input type="checkbox" id="open-menu" hidden />
+    <div class="overlay" hidden>
+      <div class="content-box">
+        <label for="open-menu" class="open">
+          <img src="./Icons/home_page/arrowleft.png" alt="" />
+        </label>
+        <div class="card">
+          <div class="title">
+            <img src="./Icons/home_page/Cart.png" alt="" />
+            <p>Card</p>
+          </div>
+          <p>3</p>
+        </div>
+        <!-- End .card -->
+        <div class="favorite">
+          <div class="title">
+            <img src="./Icons/home_page/Heart.png" alt="" />
+            <p>Favorite</p>
+          </div>
+          <p>3</p>
+        </div>
+        <!-- End .favorite -->
+        <div class="departments">
+          <p>Departments</p>
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .departments -->
+        <div class="grocery">
+          <p>Grocery</p>
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .grocery -->
+        <div class="beauty">
+          <p>Beauty</p>
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .beauty -->
+      </div>
+    </div>
+    <!-- End .overlay -->
+    <header>
+      <div class="content-box">
+        <div class="shop-info">
+          <label for="open-menu" class="open-menu" hidden>
+            <img src="./Icons/home_page/open.png" alt="" />
+          </label>
+          <a class="logo">
+            <img src="./Icons/login_and_signup_page/logo.png" alt="" />
+            <h1>grocerymart</h1>
+          </a>
+          <!-- End .logo -->
+          <nav class="menu">
+            <div class="departments">
+              <p>Departments</p>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .departments -->
+            <div class="grocery">
+              <p>Grocery</p>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .grocery -->
+            <div class="beauty">
+              <p>Beauty</p>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .beauty -->
+          </nav>
+          <!-- End .menu -->
+        </div>
+        <!-- End .shop-info -->
+        <div class="user-info">
+          <div class="search">
+            <img src="./Icons/home_page/Search.png" alt="" />
+          </div>
+          <!-- End .search -->
+          <div class="shopping">
+            <label class="wishlist">
+              <img src="./Icons/home_page/Heart.png" alt="" />
+              <p>03</p>
+            </label>
+            <!-- End .wishlist -->
+            <span class="space-between"></span>
+            <label class="cart" for="open-your-items">
+              <img src="./Icons/home_page/Cart.png" alt="" />
+              <p>$65.42</p>
+            </label>
+            <!-- End .cart -->
+          </div>
+          <!-- End .shopping -->
+          <div class="avatar">
+            <img src="./Images/home_page/Avatar.png" alt="" />
+          </div>
+          <!-- End .avatar -->
+        </div>
+        <!-- End .user-info -->
+      </div>
+      <!-- End .content-box -->
+    </header>
+    <!-- End header -->
+    <div class="search-items">
+      <label for="search">Search for item</label>
+      <input type="text" id="search" />
+      <img src="./Icons/home_page/Search.png" alt="" />
+    </div>
+    <!-- End .searh-items -->
+    <div class="container">
+      <div class="profile">
+        <div class="avatar-box">
+          <img class="bg-toplay" src="./Images/profile_page/bg.png" alt="" />
+          <div class="content">
+            <img class="avt" src="./Images/profile_page/avt.png" alt="" />
+            <div class="name">
+              <p>Imran Khan</p>
+              <p>Registered: 17th May 2022</p>
+            </div>
+          </div>
+        </div>
+        <!-- End .avatar-box -->
+        <div class="user-info-2">
+          <div class="manage-account">
+            <h2>Manage Account</h2>
+            <div class="info">
+              <label for="personal-info">
+                <img src="./Icons/profile_page/Profile.png" alt="" />
+                <div>Personal info</div>
+              </label>
+              <label for="">
+                <img src="./Icons/profile_page/Location.png" alt="" />
+                <div>Addresses</div>
+              </label>
+              <label for="">
+                <img src="./Icons/profile_page/Message.png" alt="" />
+                <div>Communication & privacy</div>
+              </label>
+            </div>
+          </div>
+          <!-- End .manage-account -->
+          <div class="my-items">
+            <h2>My items</h2>
+            <div class="info">
+              <label for="">
+                <img src="./Icons/profile_page/Download.png" alt="" />
+                <div>Reorder</div>
+              </label>
+              <label for="">
+                <img src="./Icons/profile_page/Iconly.png" alt="" />
+                <div>Lists</div>
+              </label>
+              <label for="">
+                <img src="./Icons/profile_page/gift.png" alt="" />
+                <div>Registries</div>
+              </label>
+            </div>
+          </div>
+          <!-- End .my-items -->
+          <div class="subscription-plans">
+            <h2>Subscription & plans</h2>
+            <label for="">
+              <img src="./Icons/profile_page/Shield Done.png" alt="" />
+              <div>Protection plans</div>
+            </label>
+          </div>
+          <!-- End .subscription-plans -->
+          <div class="customer-service">
+            <h2>Customer Service</h2>
+            <div class="info">
+              <label for="">
+                <img src="./Icons/profile_page/Info Square.png" alt="" />
+                <div>Help</div>
+              </label>
+              <label for="">
+                <img src="./Icons/profile_page/Danger Circle.png" alt="" />
+                <div>Terms of Use</div>
+              </label>
+            </div>
+          </div>
+          <!-- End .customer-service   -->
+        </div>
+        <!-- End .user-info-2 -->
+      </div>
+      <!-- End .profile -->
+      <div class="shopping-info">
+        <div class="my-wallet">
+          <div class="title">
+            <h2 class="name">My Wallet</h2>
+            <p class="des">Payment methods</p>
+          </div>
+          <!-- End .title -->
+          <div class="wallet-list">
+            <img src="./Images/profile_page/card1.png" class="wallet1" alt="" />
+            <img src="./Images/profile_page/card2.png" class="wallet2" alt="" />
+            <label class="wallet3" for="add-new-card">
+              <div class="box">
+                <img src="Icons/checkout_page/Plus.png" alt="" />
+                <p>Add New Card</p>
+              </div>
+            </label>
+          </div>
+          <!-- End .wallet-list -->
+        </div>
+        <!-- End .my-wallet -->
+        <div class="account-info">
+          <div class="title">
+            <h2 class="name">Account info</h2>
+            <p class="des">Address, contact information and password</p>
+          </div>
+          <!-- End .title -->
+          <div class="info-box">
+            <div class="line-1">
+              <div class="info-1">
+                <img src="./Icons/profile_page/Message.png" alt="" />
+                <div class="des">
+                  <h3>Email Addess</h3>
+                  <p>tarek97.ta@gmail.com</p>
+                </div>
+              </div>
+              <!-- End .info-1 -->
+              <div class="info-2">
+                <img src="./Icons/profile_page/Calling.png" alt="" />
+                <div class="info">
+                  <h3>Phone number</h3>
+                  <p>+000 11122 2345 657</p>
+                </div>
+              </div>
+              <!-- End .info-2 -->
+            </div>
+            <div class="info-3">
+              <img src="./Icons/profile_page/Location.png" alt="" />
+              <div class="info">
+                <h3>Add an address</h3>
+                <p>Bangladesh Embassy, Washington, DC 20008</p>
+              </div>
+            </div>
+            <!-- End .info-3 -->
+          </div>
+          <!-- End .info-box -->
+        </div>
+        <!-- End .account-info -->
+        <div class="lists">
+          <div class="title">
+            <h2 class="name">Lists</h2>
+            <p class="des">2 items - Primary</p>
+          </div>
+          <!-- End .title -->
+          <div class="items">
+            <div class="item-1">
+              <img src="./Images/profile_page/item1.png" alt="" />
+              <div class="des">
+                <h3 class="name">
+                  Coffee Beans - Espresso Arabica and Robusta Beans
+                </h3>
+                <div class="price">
+                  <p>$47.00</p>
+                  <p>Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <!-- End .item-1 -->
+            <span class="space-between"></span>
+            <div class="item-2">
+              <img src="./Images/profile_page/item2.png" alt="" />
+              <div class="des">
+                <h3 class="name">
+                  Lavazza Coffee Blends - Try the Italian Espresso
+                </h3>
+                <div class="price">
+                  <p>$53.00</p>
+                  <p>Add to cart</p>
+                </div>
+              </div>
+            </div>
+            <!-- End .item-2 -->
+          </div>
+          <!-- End .items -->
+        </div>
+        <!-- End .lists -->
+      </div>
+      <!-- End .shopping-info -->
+      <div class="add-card">
+        <div class="action">
+          <div class="title">
+            <img src="./Icons/home_page/arrowleft.png" alt="" />
+            <h2>Add credit or debit card</h2>
+          </div>
+          <!-- End .title -->
+          <div class="add-box">
+            <div class="line-1">
+              <div class="part-1">
+                <h3 class="title">First Name</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">Imran</div>
+                </div>
+              </div>
+              <!-- End .part-1 -->
+              <div class="part-2">
+                <h3 class="title">Last Name</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">Khan</div>
+                </div>
+              </div>
+              <!-- End .part-2 -->
+            </div>
+            <!-- End .line-1 -->
+            <div class="line-2">
+              <div class="part-1">
+                <h3 class="title">Card Information</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">Card Number</div>
+                </div>
+              </div>
+              <!-- End .part-1 -->
+              <div class="part-2">
+                <h3 class="title">Expiration Date</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">MM/YY</div>
+                </div>
+              </div>
+              <!-- End .part-2 -->
+            </div>
+            <!-- End .line-2 -->
+            <div class="line-3">
+              <div class="part-1">
+                <h3 class="title">CVV</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">123</div>
+                </div>
+              </div>
+              <!-- End .part-1 -->
+              <div class="part-2">
+                <h3 class="title">Phone Number</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">017</div>
+                </div>
+              </div>
+              <!-- End .part-2 -->
+            </div>
+            <!-- End .line-3 -->
+          </div>
+          <!-- End .add-box -->
+          <div class="set-defaul">
+            <h3>Card Preferences</h3>
+            <div class="set-box">
+              <input type="checkbox" name="set-defaul" id="set-defaul" />
+              <label for="set-defaul">Set as default card</label>
+            </div>
+          </div>
+          <!-- End .set-default -->
+        </div>
+        <!-- End .action -->
+        <div class="submit">
+          <p>Cancel</p>
+          <p>Save Card</p>
+        </div>
+        <!-- End .submit -->
+      </div>
+      <!-- End .add-card -->
+      <div class="personal-info">
+        <div class="action">
+          <div class="title">
+            <img src="./Icons/home_page/arrowleft.png" alt="" />
+            <h2>Personal info</h2>
+          </div>
+          <!-- End .title -->
+          <div class="add-box">
+            <div class="line-1">
+              <div class="part-1">
+                <h3 class="title">Full name</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">Imran Khan</div>
+                </div>
+              </div>
+              <!-- End .part-1 -->
+              <div class="part-2">
+                <h3 class="title">Email address</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">admin@uihut.com</div>
+                </div>
+              </div>
+              <!-- End .part-2 -->
+            </div>
+            <!-- End .line-1 -->
+            <div class="line-2">
+              <div class="part-1">
+                <h3 class="title">Phone number</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">+008 01234 56789</div>
+                </div>
+              </div>
+              <!-- End .part-1 -->
+              <div class="part-2">
+                <h3 class="title">Password</h3>
+                <div class="input-box">
+                  <input type="text" />
+                  <div class="placeholer">•••••••••</div>
+                </div>
+              </div>
+              <!-- End .part-2 -->
+            </div>
+            <!-- End .line-2 -->
+          </div>
+          <!-- End .add-box -->
+        </div>
+        <!-- End .action -->
+        <div class="submit">
+          <p>Cancel</p>
+          <p>Save Edit</p>
+        </div>
+        <!-- End .submit -->
+      </div>
+      <!-- End .personal-info -->
+    </div>
+    <!-- End .container -->
+  </body>
+</html>

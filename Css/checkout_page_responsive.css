@@ -1,0 +1,230 @@
+@media screen and (max-width: 1219.98px) {
+  .user-info .search {
+    display: none;
+  }
+  .search-items {
+    display: block;
+  }
+  .product-checkout {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .submit-box {
+    width: 40%;
+  }
+  .product-info-box {
+    width: 80%;
+  }
+  .continue-to-checkout-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .shopping {
+    display: none;
+  }
+  .avatar {
+    top: -38px;
+  }
+  .product-info-box {
+    width: 100%;
+  }
+  .submit-box {
+    width: 100%;
+  }
+  .ship-address {
+    width: 149%;
+  }
+  .ship-method {
+    width: 149%;
+  }
+  .pay {
+    padding-left: 40%;
+  }
+  .checkout {
+    height: 100% !important;
+  }
+  .continue-to-checkout {
+    padding-left: 36%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .open-menu {
+    display: block;
+  }
+  body {
+    height: 200%;
+  }
+  .menu {
+    display: none;
+  }
+  .product {
+    align-items: flex-start;
+    height: 275px;
+  }
+  .product > img {
+    width: 60px;
+    height: 60px;
+  }
+  .product .info {
+    height: 100%;
+    position: relative;
+  }
+  .product .info .title {
+    flex-direction: column;
+    gap: 0;
+  }
+  .product .info .title p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    position: absolute;
+    top: 215px;
+  }
+  .product .info .title h2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .product .info .type {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .product .info .state {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .action-box {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .product-info-box {
+    padding: 16px;
+  }
+  .action {
+    position: absolute;
+    top: 250px;
+    /* left: -30px; */
+  }
+  .continue-to-checkout {
+    padding-left: 33%;
+  }
+  header {
+    height: 82px;
+  }
+  #wishlist:checked ~ .product-checkout .action {
+    left: -30px;
+  }
+  .product {
+    /* height: 350px; */
+  }
+  #wishlist:checked ~ .product-checkout .product {
+    height: 350px;
+  }
+  .check-product {
+    bottom: -10px;
+    left: -37%;
+  }
+}
+@media screen and (max-width: 652.98px) {
+  .continue-to-checkout {
+    padding-left: 29%;
+  }
+  .bottom-box {
+    display: none;
+  }
+  .product {
+    /* height: 275px; */
+  }
+  .product-info-box span:nth-of-type(4) {
+    display: none;
+  }
+  #shipping:checked ~ .product-checkout .submit-box .continue-to-checkout {
+    display: block;
+  }
+  .checkout {
+    height: 67% !important;
+  }
+  .continue-to-checkout-2 {
+    display: block;
+  }
+  #wishlist:checked ~ .product-checkout .product {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 619.98px) {
+  #wishlist:checked ~ .product-checkout #item-select {
+    display: block;
+  }
+  #wishlist:checked ~ .product-checkout .product {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .continue-to-checkout {
+    padding-left: 17%;
+  }
+  .add-address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .edit {
+    position: static;
+  }
+  .address {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .continue-to-checkout-2 {
+    padding-left: 20%;
+  }
+  .ship-info {
+    flex-direction: column;
+    align-items: flex-start !important;
+    /* justify-content: flex-start !important; */
+  }
+  .pay {
+    padding-left: 36%;
+  }
+  #wishlist:checked ~ .product-checkout .product {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 482.98px) {
+  .pay {
+    padding-left: 31%;
+  }
+  .product-checkout .bottom-box {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 16px;
+    justify-content: stretch !important;
+  }
+  #payment-method:checked ~ .page-part {
+    height: 120px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 439.98px) {
+  .ship-address {
+    height: 390px;
+  }
+  .ship-method {
+    height: 467px;
+  }
+}
+@media screen and (max-width: 426.98px) {
+  .pay {
+    padding-left: 29%;
+  }
+}
+@media screen and (max-width: 399.98px) {
+  .continue-to-checkout {
+    padding-left: 23%;
+    /* padding-right: 23%; */
+  }
+  .submit-box label {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}

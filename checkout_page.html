@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Out Page</title>
+    <link rel="stylesheet" href="./Css/checkout_page.css" />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./Css/checkout_page_responsive.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./Favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./Favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./Favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./Favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./Favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./Favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./Favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./Favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./Favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <input type="radio" id="wishlist" name="page-part" hidden />
+    <input type="checkbox" id="home" name="page-part" hidden />
+    <input type="radio" id="checkout" name="page-part" hidden checked />
+    <input type="radio" id="shipping" name="page-part" hidden />
+    <input type="radio" id="payment-method" name="page-part" hidden />
+    <input type="checkbox" id="open-menu" hidden />
+    <div class="overlay" hidden>
+      <div class="content-box">
+        <label for="open-menu" class="open">
+          <img src="./Icons/home_page/arrowleft.png" alt="" />
+        </label>
+        <div class="card">
+          <div class="title">
+            <img src="./Icons/home_page/Cart.png" alt="" />
+            <p>Card</p>
+          </div>
+          <p>3</p>
+        </div>
+        <!-- End .card -->
+        <div class="favorite">
+          <label class="title" for="wishlist">
+            <img src="./Icons/home_page/Heart.png" alt="" />
+            <p>Favorite</p>
+          </label>
+          <p>3</p>
+        </div>
+        <!-- End .favorite -->
+        <div class="departments">
+          <p>Departments</p>
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .departments -->
+        <div class="grocery">
+          <p>Grocery</p>
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .grocery -->
+        <div class="beauty">
+          <p>Beauty</p>
+          <img src="./Icons/home_page/arrowright.png" alt="" />
+        </div>
+        <!-- End .beauty -->
+      </div>
+    </div>
+    <!-- End .overlay -->
+    <header>
+      <div class="content-box">
+        <div class="shop-info">
+          <label for="open-menu" class="open-menu" hidden>
+            <img src="./Icons/home_page/open.png" alt="" />
+          </label>
+          <a class="logo">
+            <img src="./Icons/login_and_signup_page/logo.png" alt="" />
+            <h1>grocerymart</h1>
+          </a>
+          <!-- End .logo -->
+          <nav class="menu">
+            <div class="departments">
+              <p>Departments</p>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .departments -->
+            <div class="grocery">
+              <p>Grocery</p>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .grocery -->
+            <div class="beauty">
+              <p>Beauty</p>
+              <img src="./Icons/home_page/Arrow-Down.png" alt="" />
+            </div>
+            <!-- End .beauty -->
+          </nav>
+          <!-- End .menu -->
+        </div>
+        <!-- End .shop-info -->
+        <div class="user-info">
+          <div class="search">
+            <img src="./Icons/home_page/Search.png" alt="" />
+          </div>
+          <!-- End .search -->
+          <div class="shopping">
+            <label class="wishlist" for="wishlist">
+              <img src="./Icons/home_page/Heart.png" alt="" />
+              <p>03</p>
+            </label>
+            <!-- End .wishlist -->
+            <span class="space-between"></span>
+            <label class="cart" for="open-your-items">
+              <img src="./Icons/home_page/Cart.png" alt="" />
+              <p>$65.42</p>
+            </label>
+            <!-- End .cart -->
+          </div>
+          <!-- End .shopping -->
+          <div class="avatar">
+            <img src="./Images/home_page/Avatar.png" alt="" />
+          </div>
+          <!-- End .avatar -->
+        </div>
+        <!-- End .user-info -->
+      </div>
+      <!-- End .content-box -->
+    </header>
+    <!-- End header -->
+    <div class="search-items" hidden>
+      <label for="search">Search for item</label>
+      <input type="text" id="search" />
+      <img src="./Icons/home_page/Search.png" alt="" />
+    </div>
+    <!-- End .searh-items -->
+    <div class="page-part">
+      <div class="part1">
+        <label for="home">Home</label>
+        <img src="./Icons/home_page/arrowright.png" alt="" />
+      </div>
+      <!-- End .part1 -->
+      <div class="part2">
+        <label for="checkout">Checkout</label>
+        <img src="./Icons/home_page/arrowright.png" alt="" />
+      </div>
+      <!-- End .part2 -->
+      <div class="part3">
+        <label for="shipping">Shipping</label>
+        <img src="./Icons/home_page/arrowright.png" alt="" />
+      </div>
+      <!-- End .part3 -->
+      <div class="part4">
+        <label for="payment-method">Payment method</label>
+      </div>
+      <!-- End .part4 -->
+      <div class="part5">
+        <label for="payment-method">Favorite</label>
+      </div>
+      <!-- End .part5 -->
+    </div>
+    <!-- End .page-part -->
+    <div class="product-checkout">
+      <div class="product-info-box">
+        <!-- SHIPPING -->
+        <h2 class="title">
+          1. Shipping, arrives between Mon, May 16—Tue, May 24
+        </h2>
+        <span class="space-between"></span>
+        <div class="shipping-address">
+          <div class="add-address">
+            <div class="des">
+              <p>Shipping address</p>
+              <p>Where should we deliver your order?</p>
+            </div>
+            <button>
+              <img src="./Icons/checkout_page/Plus.png" alt="" />
+              <p>Add a new address</p>
+            </button>
+          </div>
+          <!-- End .add-address -->
+          <div class="address">
+            <div class="info">
+              <input type="checkbox" id="address1" name="address" />
+              <label for="address1">
+                <div class="name">
+                  <p>Imran Khan</p>
+                  <p>Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+                </div>
+                <div class="type">
+                  <p>Shipping</p>
+                  <p>Delivery from store</p>
+                </div>
+              </label>
+            </div>
+            <!-- End .info -->
+            <label class="edit" for="edit">
+              <img src="./Icons/checkout_page/Edit.png" alt="" />
+              <p>Edit</p>
+            </label>
+          </div>
+          <!-- End .address -->
+          <div class="address">
+            <div class="info">
+              <input type="checkbox" id="address2" name="address" />
+              <label for="address2">
+                <div class="name">
+                  <p>Imran Khan</p>
+                  <p>
+                    Al Hamra City (10th Floor), Hazrat Shahjalal Road, Sylhet,
+                    Sylhet, Bangladesh
+                  </p>
+                </div>
+                <div class="type">
+                  <p>Shipping</p>
+                  <p>Delivery from store</p>
+                </div>
+              </label>
+            </div>
+            <!-- End .info -->
+            <label class="edit" for="edit">
+              <img src="./Icons/checkout_page/Edit.png" alt="" />
+              <p>Edit</p>
+            </label>
+          </div>
+          <!-- End .address -->
+        </div>
+        <!-- End .shipping-address -->
+        <!-- FAVORITE -->
+        <div class="fvr-box">
+          <h2>Favorite List</h2>
+          <p>3 items</p>
+          <input type="checkbox" />
+        </div>
+        <!-- FAVORITE -->
+        <p class="items-details">Items details</p>
+        <!-- SHIPPING -->
+        <div class="product">
+          <input type="checkbox" hidden id="item-select" />
+          <img src="./Images/checkout_page/prd1.png" alt="" />
+          <div class="info">
+            <div class="title">
+              <h2>Coffee Beans - Espresso Arabica and Robusta Beans</h2>
+              <p class="price">$47.00</p>
+            </div>
+            <!-- End .title -->
+            <div class="state">
+              <p class="price">$47.00</p>
+              <span class="space-between"></span>
+              <p>In Stock</p>
+            </div>
+            <!-- End .state -->
+            <div class="action-box">
+              <div class="type">
+                <select name="brand" id="brand">
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                </select>
+                <div class="quantity">
+                  <img src="./Icons/checkout_page/minus.png" alt="" />
+                  <button>1</button>
+                  <img src="./Icons/checkout_page/Plus.png" alt="" />
+                </div>
+              </div>
+              <!-- End .type -->
+              <div class="action">
+                <div class="save">
+                  <img src="./Icons/checkout_page/heart.svg" alt="" />
+                  <p>Save</p>
+                </div>
+                <div class="delete">
+                  <img src="./Icons/checkout_page/Delete.png" alt="" />
+                  <p>Delete</p>
+                </div>
+              </div>
+              <!-- End .action -->
+              <label for="check-product" class="check-product">Check Out</label>
+            </div>
+            <!-- End .action-box -->
+          </div>
+          <!-- End .info -->
+        </div>
+        <!-- End .product -->
+        <span class="space-between"></span>
+        <div class="product">
+          <input type="checkbox" hidden id="item-select" />
+          <img src="./Images/checkout_page/prd2.png" alt="" />
+          <div class="info">
+            <div class="title">
+              <h2>Lavazza Coffee Blends - Try the Italian Espresso</h2>
+              <p class="price">$106.00</p>
+            </div>
+            <!-- End .title -->
+            <div class="state">
+              <p class="price">$53.00</p>
+              <span class="space-between"></span>
+              <p>In Stock</p>
+            </div>
+            <!-- End .state -->
+            <div class="action-box">
+              <div class="type">
+                <select name="brand" id="brand">
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                </select>
+                <div class="quantity">
+                  <img src="./Icons/checkout_page/minus.png" alt="" />
+                  <button>2</button>
+                  <img src="./Icons/checkout_page/Plus.png" alt="" />
+                </div>
+              </div>
+              <!-- End .type -->
+              <div class="action">
+                <div class="save">
+                  <img src="./Icons/checkout_page/heart.svg" alt="" />
+                  <p>Save</p>
+                </div>
+                <div class="delete">
+                  <img src="./Icons/checkout_page/Delete.png" alt="" />
+                  <p>Delete</p>
+                </div>
+              </div>
+              <!-- End .action -->
+              <label for="check-product" class="check-product">Check Out</label>
+            </div>
+            <!-- End .action-box -->
+          </div>
+          <!-- End .info -->
+        </div>
+        <!-- End .product -->
+        <span class="space-between"></span>
+        <div class="product">
+          <input type="checkbox" hidden id="item-select" />
+          <img src="./Images/checkout_page/prd3.png" alt="" />
+          <div class="info">
+            <div class="title">
+              <h2>Qualità Oro Mountain Grown - Espresso Coffee Beans</h2>
+              <p class="price">$38.65</p>
+            </div>
+            <!-- End .title -->
+            <div class="state">
+              <p class="price">$38.65</p>
+              <span class="space-between"></span>
+              <p>In Stock</p>
+            </div>
+            <!-- End .state -->
+            <div class="action-box">
+              <div class="type">
+                <select name="brand" id="brand">
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                  <option value="lavazza">LavAzza</option>
+                </select>
+                <div class="quantity">
+                  <img src="./Icons/checkout_page/minus.png" alt="" />
+                  <button>1</button>
+                  <img src="./Icons/checkout_page/Plus.png" alt="" />
+                </div>
+              </div>
+              <!-- End .type -->
+              <div class="action">
+                <div class="save">
+                  <img src="./Icons/checkout_page/heart.svg" alt="" />
+                  <p>Save</p>
+                </div>
+                <div class="delete">
+                  <img src="./Icons/checkout_page/Delete.png" alt="" />
+                  <p>Delete</p>
+                </div>
+              </div>
+              <!-- End .action -->
+              <label for="check-product" class="check-product">Check Out</label>
+            </div>
+            <!-- End .action-box -->
+          </div>
+          <!-- End .info -->
+        </div>
+        <!-- End .product -->
+        <span class="space-between"></span>
+        <div class="bottom-box">
+          <label for="continue-shopping" class="continue-shopping">
+            <img src="./Icons/checkout_page/Arrow - Left 2.png" alt="" />
+            <p>Continue Shopping</p>
+          </label>
+          <!-- End .continue-shopping -->
+          <div class="total-box">
+            <div class="info">
+              <div class="subtotal">
+                <p>Subtotal:</p>
+                <p>$191.65</p>
+              </div>
+              <div class="shipping">
+                <p>Shipping:</p>
+                <p>$10.00</p>
+              </div>
+            </div>
+            <!-- End .info -->
+            <span class="space-between"></span>
+            <div class="total">
+              <p>Total:</p>
+              <p>$201.65</p>
+            </div>
+            <!-- End .total -->
+          </div>
+          <!-- End .total-box -->
+          <label class="next-page" for="payment-method">Continue</label>
+          <label class="all-check" hidden>All Check Out</label>
+        </div>
+        <!-- End .bottom-box -->
+      </div>
+      <!-- End .product-info-box -->
+      <div class="product-pay-method">
+        <div class="ship-address">
+          <div class="title">
+            <h2>1. Shipping, arrives between Mon, May 16—Tue, May 24</h2>
+            <div class="edit">
+              <img src="./Icons/checkout_page/Edit.png" alt="" />
+              <p>Edit</p>
+            </div>
+          </div>
+          <!-- End .title -->
+          <div class="option">
+            <div class="info">
+              <p>Imran Khan</p>
+              <p>Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+            </div>
+            <img src="./Icons/checkout_page/Tick Square.png" alt="" />
+          </div>
+          <!-- End .option -->
+          <div class="option">
+            <div class="info">
+              <p>Items details</p>
+              <p>2 items</p>
+            </div>
+            <p>View details</p>
+          </div>
+          <!-- End .option -->
+        </div>
+        <!-- End .ship-address -->
+        <div class="ship-method">
+          <h2>2. Shipping method</h2>
+          <span class="space-between"></span>
+          <p>Availeble Shipping method</p>
+          <div class="option">
+            <img src="./Images/checkout_page/ship1.png" alt="" />
+            <div class="ship-info">
+              <div class="des">
+                <p>Fedex Delivery</p>
+                <p>Delivery: 2-3 days work</p>
+              </div>
+              <div class="price">
+                <label for="ship-price">Free</label>
+                <input type="checkbox" id="ship-price" />
+              </div>
+            </div>
+          </div>
+          <!-- End .option -->
+          <div class="option">
+            <img src="./Images/checkout_page/ship2.png" alt="" />
+            <div class="ship-info">
+              <div class="des">
+                <p>DHL Delivery</p>
+                <p>Delivery: 2-3 days work</p>
+              </div>
+              <div class="price">
+                <label for="ship-price">$12.00</label>
+                <input type="checkbox" id="ship-price" />
+              </div>
+            </div>
+          </div>
+          <!-- End .option -->
+        </div>
+        <!-- End .ship-method -->
+      </div>
+      <!-- End .product-pay-method -->
+      <div class="submit-box">
+        <div class="input-data">
+          <div class="title">
+            <h2>Payment Details</h2>
+            <p>
+              Complete your purchase item by providing your payment details
+              order.
+            </p>
+          </div>
+          <!-- End .title -->
+          <div class="input-box">
+            <h3>Email Address</h3>
+            <div class="input">
+              <label for="email">example@gmail.com</label>
+              <input type="text" id="email" name="email" />
+            </div>
+          </div>
+          <!-- End .input -->
+          <div class="input-box">
+            <h3>Card Holder</h3>
+            <div class="input">
+              <label for="card-holder">example@gmail.com</label>
+              <input type="text" id="card-holder" name="card-holder" />
+            </div>
+          </div>
+          <!-- End .input -->
+          <div class="input-box">
+            <h3>Card Details</h3>
+            <div class="input">
+              <label for="card-details">example@gmail.com</label>
+              <input type="text" id="card-details" name="card-details" />
+            </div>
+          </div>
+          <!-- End .input -->
+          <div class="input-box">
+            <div class="input">
+              <label for="date" class="date">
+                <div>MM/YY</div>
+                <div>CVC</div>
+              </label>
+              <input type="text" id="date" name="date" />
+            </div>
+          </div>
+          <!-- End .input -->
+        </div>
+        <!-- End .input-data -->
+        <div class="checkout">
+          <div class="info">
+            <div class="subtotal">
+              <p>Subtotal (items)</p>
+              <p>3</p>
+            </div>
+            <div class="price">
+              <p>Price (Total)</p>
+              <p>$191.65</p>
+            </div>
+            <div class="shipping">
+              <p>Shipping</p>
+              <p>$10.00</p>
+            </div>
+            <span class="space-between"></span>
+            <div class="total">
+              <p>Estimated Total</p>
+              <p>$201.65</p>
+            </div>
+          </div>
+          <!-- End .info -->
+          <label for="shipping" class="continue-to-checkout"
+            >Continue to checkout</label
+          >
+          <label for="payment-method" class="continue-to-checkout-2"
+            >Continue to checkout</label
+          >
+          <label for="pay" class="pay">Pay $465.98</label>
+        </div>
+        <!-- End .checkout -->
+        <div class="gift">
+          <img src="./Icons/checkout_page/gift.png" alt="" />
+          <div class="des">
+            <p>Send this order as a gift.</p>
+            <p>Available items will be shipped to your gift recipient.</p>
+          </div>
+        </div>
+        <!-- End .gift -->
+      </div>
+      <!-- End .submit-box -->
+    </div>
+    <!-- End .product-checkout -->
+  </body>
+</html>

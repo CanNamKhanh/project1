@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login And SignUp</title>
+    <link rel="stylesheet" href="./Css/login_and_signup_page.css" />
+    <link rel="stylesheet" href="./Css/login_and_signup_responsive.css" />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./Favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./Favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./Favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./Favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./Favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./Favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./Favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./Favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./Favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <input type="checkbox" id="open-box" hidden />
+    <div class="page-head">
+      <a class="page-logo">
+        <img src="./Icons/login_and_signup_page/logo.png" alt="" />
+        <h1>grocerymart</h1>
+      </a>
+    </div>
+    <!-- End .page-head -->
+    <div class="page-decor">
+      <img src="./Images/login_and_signup_page/pagedecor.png" alt="" />
+      <p>
+        The best of luxury brand values, high quality products, and innovative
+        services
+      </p>
+    </div>
+    <label for="open-box" class="page-foot" hidden>
+      <span></span>
+      <span></span>
+      <img
+        src="./Icons/home_page/arrowleft.png"
+        alt=""
+        style="transform: rotate(180deg)"
+      />
+    </label>
+
+    <div class="active-box">
+      <!-- SIGN UP SECTION -->
+      <input type="checkbox" id="change" hidden checked />
+      <div class="content-box-1">
+        <div class="sign-up-box">
+          <div class="page-head">
+            <a class="page-logo">
+              <img src="./Icons/login_and_signup_page/logo.png" alt="" />
+              <h1>grocerymart</h1>
+            </a>
+            <div class="page-des">
+              <h2>Sign Up</h2>
+              <p>
+                Let’s create your account and Shop like a pro and save money.
+              </p>
+            </div>
+          </div>
+          <!-- End .page-head -->
+          <div class="account-create">
+            <div class="account-info">
+              <div class="put-email">
+                <input type="text" name="email" id="email" required />
+                <label for="email">Email</label>
+                <img src="./Icons/login_and_signup_page/Message.png" alt="" />
+              </div>
+              <div class="put-password">
+                <input type="password" name="password" id="password" required />
+                <label for="password">Password</label>
+                <img src="./Icons/login_and_signup_page/Lock.png" alt="" />
+
+                <input
+                  type="password"
+                  name="password"
+                  id="cf-password"
+                  required
+                />
+                <label for="cf-password">Confirm Password</label>
+                <img src="./Icons/login_and_signup_page/Lock.png" alt="" />
+                <div class="bottom">
+                  <div class="set-default">
+                    <input
+                      type="checkbox"
+                      id="set-default"
+                      name="set-psw-default"
+                    />
+                    <label for="set-default">Set as default card</label>
+                  </div>
+                  <a href="#">Recovery Password</a>
+                </div>
+                <!-- End .bottom -->
+              </div>
+              <!-- End .put-password -->
+            </div>
+            <!-- End .account-info -->
+            <div class="submit">
+              <button>Sign Up</button>
+              <div class="gmail-signin">
+                <button>Sign in with Gmail</button>
+                <img
+                  src="./Icons/login_and_signup_page/googleicon.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- End .submit -->
+          </div>
+          <!-- End .account-create -->
+        </div>
+        <!-- End .sign-up-box -->
+        <div class="change-active">
+          <p>You have an account yet?</p>
+          <label for="change">
+            <p href="#">Sign In</p>
+          </label>
+        </div>
+        <!-- End .change-active -->
+      </div>
+      <!-- End .content-box-1 -->
+      <!-- LOG IN SECTION -->
+      <div class="content-box-2">
+        <div class="sign-up-box">
+          <div class="page-head">
+            <a class="page-logo">
+              <img src="./Icons/login_and_signup_page/logo.png" alt="" />
+              <h1>grocerymart</h1>
+            </a>
+            <div class="page-des">
+              <h2>Hello Again!</h2>
+              <p>
+                Welcome back to sign in. As a returning customer, you have
+                access to your previously saved all information.
+              </p>
+            </div>
+          </div>
+          <!-- End .page-head -->
+          <div class="account-login">
+            <div class="account-info">
+              <div class="put-email">
+                <input type="text" name="email" id="email" required />
+                <label for="email">Email</label>
+                <img src="./Icons/login_and_signup_page/Message.png" alt="" />
+              </div>
+              <div class="put-password">
+                <input type="password" name="password" id="password" required />
+                <label for="password">Password</label>
+                <img src="./Icons/login_and_signup_page/Lock.png" alt="" />
+
+                <div class="bottom">
+                  <div class="set-default">
+                    <input
+                      type="checkbox"
+                      id="set-default2"
+                      name="set-psw-default"
+                    />
+                    <label for="set-default2">Set as default card</label>
+                  </div>
+                  <a href="#">Recovery Password</a>
+                </div>
+                <!-- End .bottom -->
+              </div>
+              <!-- End .put-password -->
+            </div>
+            <!-- End .account-info -->
+            <div class="submit">
+              <button>Login</button>
+              <div class="gmail-signin">
+                <button>Sign in with Gmail</button>
+                <img
+                  src="./Icons/login_and_signup_page/googleicon.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- End .submit -->
+          </div>
+          <!-- End .account-login -->
+        </div>
+        <!-- End .sign-up-box -->
+        <div class="change-active">
+          <p>Don’t have an account yet?</p>
+          <label for="change">
+            <p href="#">Sign Up</p>
+          </label>
+        </div>
+        <!-- End .change-active -->
+      </div>
+      <!-- End .content-box-2 -->
+    </div>
+    <!-- End .active-box -->
+  </body>
+</html>

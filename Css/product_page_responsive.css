@@ -1,0 +1,131 @@
+@media screen and (max-width: 1363.98px) {
+  .shopping {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .avatar {
+    top: -37px;
+  }
+  .product {
+    height: 920px;
+  }
+  .product-info {
+    height: 100%;
+  }
+  .add-box {
+    left: 0;
+    top: 250px;
+  }
+}
+@media screen and (max-width: 1219.98px) {
+  .search-items {
+    display: block;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .menu {
+    display: none;
+  }
+  .open-menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  #open-menu:checked ~ .overlay {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 801.98px) {
+  .review-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .review-content > div[class*="customer"] {
+    width: 100%;
+    height: 30%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .page-part {
+    flex-wrap: wrap;
+  }
+  .product {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 105%;
+  }
+  .product-img {
+    width: 100%;
+  }
+  .product-info {
+    background-color: white;
+    width: 100%;
+    padding: 16px;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .product-info > .content-box {
+    width: 100%;
+  }
+  .product-info > .content-box .info-box {
+    width: 100%;
+  }
+  .add-box {
+    width: 100%;
+  }
+  .mass select {
+    background-color: white;
+  }
+  header {
+    background-color: white;
+  }
+  body {
+    background-color: #f6f6f6;
+  }
+  .page-part {
+    background-color: white;
+    border-radius: 20px;
+  }
+  .add-box {
+    height: 67%;
+  }
+  .reviews-box {
+    margin-top: 20px;
+    background-color: #f6f6f6;
+    width: 89.333333333%;
+  }
+  .reviews-box > .des {
+    display: block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+  .reviews-box .review-part label:nth-child(4) {
+    display: none;
+    gap: 20px;
+  }
+  .review-part {
+    width: 100%;
+  }
+  .custumer-review {
+    justify-content: center;
+  }
+  .review-content {
+    gap: 30px;
+  }
+  .search-items label {
+    color: #9e9da8;
+  }
+  .search-items input {
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 499.98px) {
+  .page-part {
+    height: 104px;
+  }
+}

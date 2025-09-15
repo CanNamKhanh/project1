@@ -1,0 +1,195 @@
+@media screen and (max-width: 1412.98px) {
+  .wallet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .my-wallet {
+    height: 200%;
+  }
+  .wallet1,
+  .wallet2 {
+    width: 281px;
+  }
+  .info-box .line-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .shopping-info {
+    height: 152.5%;
+    width: 65%;
+  }
+  .account-info {
+    height: 30%;
+  }
+  .account-info .info-box div[class*="info-"] {
+    width: 462px;
+  }
+}
+@media screen and (max-width: 1363.98px) {
+  .shopping {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .avatar {
+    top: -37px;
+  }
+  .product {
+    height: 920px;
+  }
+  .product-info {
+    height: 100%;
+  }
+  .add-box {
+    left: 0;
+    top: 250px;
+  }
+  .add-box div[class*="line-"] {
+    flex-direction: column;
+  }
+  .add-card div[class*="line-"] div[class*="part-"] .input-box {
+    width: 218%;
+  }
+  .add-card {
+    height: 106%;
+  }
+  .add-card .action {
+    height: 90.5%;
+  }
+  #personal-info:checked ~ .container .personal-info > .action {
+    height: 89%;
+  }
+  #personal-info:checked ~ .container .personal-info {
+    height: 71%;
+  }
+  #personal-info:checked ~ .container .input-box {
+    width: 218% !important;
+  }
+}
+@media screen and (max-width: 1219.98px) {
+  .search-items {
+    display: block;
+  }
+}
+@media screen and (max-width: 1149.98px) {
+  .shopping-info {
+    height: 152.5%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1029.98px) {
+  .shopping-info {
+    height: 152.5%;
+    width: 57%;
+  }
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    height: 200.5%;
+  }
+  .profile {
+    height: 100%;
+  }
+  .account-info .info-box div[class*="info-"] {
+    width: 100%;
+  }
+  .shopping-info {
+    width: 367px;
+    height: 180%;
+  }
+  .shopping-info .lists .items > div .des .price {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wallet1,
+  .wallet2,
+  .wallet3 {
+    width: 301px;
+  }
+  .shopping-info .lists {
+    height: 450px;
+  }
+  .shopping-info .lists .items {
+    height: 500px;
+  }
+  #add-new-card:checked ~ .container {
+    height: 148.5%;
+  }
+  #personal-info:checked ~ .container {
+    height: 125%;
+  }
+  #personal-info:checked ~ .container .personal-info {
+    height: 83%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .menu {
+    display: none;
+  }
+  .open-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 823.98px) {
+  .container {
+    height: 200.5%;
+  }
+}
+@media screen and (max-width: 646.98px) {
+  .add-card .action {
+    height: 93.5%;
+  }
+  .add-card {
+    height: 131%;
+  }
+  #personal-info:checked ~ .container {
+    height: 125%;
+  }
+  #personal-info:checked ~ .container .personal-info {
+    height: 83%;
+  }
+}
+@media screen and (max-width: 647.98px) {
+  #add-new-card:checked ~ .container {
+    height: 153.5% !important;
+  }
+  .add-card .action {
+    height: 92.5%;
+  }
+  .add-card {
+    height: 126%;
+  }
+  #personal-info:checked ~ .container {
+    height: 125% !important;
+  }
+  #personal-info:checked ~ .container .personal-info {
+    height: 83%;
+  }
+}
+@media screen and (max-width: 535.98px) {
+  .add-card {
+    width: 367px;
+  }
+  #personal-info:checked ~ .container .personal-info {
+    width: 367px;
+  }
+}
+@media screen and (max-width: 504px) {
+  #add-new-card:checked ~ .container {
+    height: 153.5% !important;
+  }
+  .add-card .action {
+    height: 92.5%;
+  }
+  .add-card {
+    height: 126%;
+  }
+  #personal-info:checked ~ .container {
+    height: 125% !important;
+  }
+  #personal-info:checked ~ .container .personal-info {
+    height: 83%;
+  }
+}
