@@ -33,7 +33,8 @@ h4 {
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 1520px;
   height: 1201px;
   font-family: "Gordita", sans-serif;
   font-size: 1.5rem;
@@ -123,8 +124,9 @@ header .content-box {
   gap: 6px;
   align-items: center;
 }
-.menu > div img {
-  height: 12px;
+.menu > div > img {
+  width: 12px;
+  height: 7px;
 }
 .menu > div p {
   font-weight: 500;
@@ -153,6 +155,12 @@ header .content-box {
   align-items: center;
   background-color: #ffffff;
   justify-content: space-between;
+}
+.search img {
+  cursor: pointer;
+}
+.cart {
+  cursor: pointer;
 }
 .shopping > label {
   display: flex;
@@ -351,6 +359,7 @@ header .content-box .shop-info .open-menu img {
   gap: 14px;
   padding: 6px 12px;
   border-radius: 6px;
+  cursor: pointer;
 }
 .container .cf-info .toolbar .filter-panel button p {
   font-weight: 700;
@@ -407,12 +416,6 @@ header .content-box .shop-info .open-menu img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container .cf-info .categories .item3 .content-box .img img:nth-child(2) {
-  position: absolute;
-  width: 185px;
-  bottom: -87px;
-  right: -65px;
 }
 .container
   .cf-info
@@ -562,7 +565,8 @@ header .content-box .shop-info .open-menu img {
   gap: 14px;
   position: absolute;
   bottom: 0;
-  right: 23px;
+  right: -24px;
+  width: 90%;
 
   font-weight: 400;
   font-size: 1.4rem;
@@ -691,6 +695,10 @@ div[class*="column"] > div[class*="part"] .content {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+.grocery-drop-down .content-box .content label:hover {
+  color: blue;
+  cursor: pointer;
 }
 .grocery-drop-down .content-box .column1 {
   width: 211px;
@@ -834,6 +842,10 @@ div[class*="column"] > div[class*="part"] .content {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+.beauty-drop-down .content-box .content label:hover {
+  color: blue;
+  cursor: pointer;
+}
 .beauty-drop-down .content-box .column1 {
   width: 211px;
   height: 522px;
@@ -942,7 +954,8 @@ div[class*="column"] > div[class*="part"] .content {
   align-items: center;
   cursor: pointer;
 }
-.menu > div > img {
-  width: 12px;
-  height: 12px;
+.departments-drop-down .content label:hover {
+  color: blue;
+  cursor: pointer;
+  font-size: 1.5rem;
 }

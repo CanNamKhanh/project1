@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 100%;
+  max-width: 1520px;
   height: 1201px;
   font-family: "Gordita", sans-serif;
   font-size: 1.5rem;
@@ -196,7 +196,8 @@ div[class*="part"] label {
   padding: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 30px;
   background-color: #f6f6f6;
 }
 .product-info .name {
@@ -612,7 +613,9 @@ div[class*="part"] label {
   right: 100px;
   top: 2px;
 }
-
+a {
+  text-decoration: none;
+}
 .review-part label:hover {
   color: black;
 }
@@ -625,7 +628,6 @@ div[class*="part"] label:hover {
 .add-to-cart .submit button:hover,
 .add-to-cart .submit button:active {
   background-color: #d69d0d;
-  border: 1px solid black;
   font-weight: 500;
 }
 .overlay {

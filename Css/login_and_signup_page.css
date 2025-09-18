@@ -13,13 +13,17 @@ html {
 
 body {
   font-size: 1.5rem;
-  width: 100%;
+  max-width: 1520px;
   display: flex;
   background-color: #f4f4f8;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 .page-decor {
   width: 29.305555555%;
   height: 40.222222222%;
@@ -78,12 +82,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.sign-up-box .submit > button label {
+  cursor: pointer;
+}
 div[class*="content-box"] .page-head {
   height: 27.108433734%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 50px;
   align-items: center;
 }
 .page-logo {
@@ -227,6 +234,7 @@ input {
   font-style: Medium;
   font-size: 1.5rem;
   line-height: 2.2rem;
+  cursor: pointer;
 }
 .bottom a {
   font-weight: 500;
@@ -236,7 +244,6 @@ input {
   color: #0071dc;
   text-decoration: none;
 }
-
 .submit {
   width: 100%;
   height: 30%;
@@ -245,7 +252,7 @@ input {
   flex-direction: column;
   /* justify-content: space-between; */
 }
-.submit button:nth-child(1) {
+.submit > button {
   width: 100%;
   height: 50px;
   border-radius: 10px;
@@ -258,6 +265,10 @@ input {
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
+  cursor: pointer;
+}
+.submit > button:hover {
+  background-color: rgb(197, 181, 9);
 }
 .submit .gmail-signin button {
   width: 100%;
@@ -274,6 +285,14 @@ input {
   line-height: 2.6rem;
   text-align: center;
   position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.submit .gmail-signin button:hover {
+  background-color: #9e9da8;
 }
 .change-active {
   display: flex;
@@ -300,7 +319,7 @@ input {
   background: white;
   padding: 0 3px;
   font-size: smaller;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 .put-password input:focus + label:nth-child(2),
 .put-password input:valid + label:nth-child(2) {
@@ -308,7 +327,7 @@ input {
   background: white;
   padding: 0 3px;
   font-size: smaller;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 .put-password input:focus + label:nth-child(5),
 .put-password input:valid + label:nth-child(5) {
@@ -316,7 +335,7 @@ input {
   background: white;
   padding: 0 3px;
   font-size: smaller;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 .content-box-2 {
@@ -328,7 +347,7 @@ input {
   position: absolute;
   top: 50px;
   align-items: center;
-  transform: translateX(550px);
+  /* transform: translateX(550px); */
   transition-duration: 0.4s;
   opacity: 0;
   visibility: hidden;
@@ -342,24 +361,21 @@ input {
   flex-direction: column;
   justify-content: space-between;
 }
-
 #change:checked ~ .content-box-1 {
-  transform: translateX(550px);
+  /* transform: translateX(550px); */
   opacity: 0;
   visibility: hidden;
 }
 #change:checked ~ .content-box-2 {
-  transform: translateX(0);
+  /* transform: translateX(0); */
   opacity: 1;
   visibility: visible;
 }
 
 body > .page-head {
   display: none;
-  position: absolute;
-  left: 40%;
-  top: 80px;
-  width: 50%;
+  /* position: absolute; */
+  /* width: 50%; */
   /* transform: translateY(0); */
   transition-duration: 0.4s;
 }
@@ -395,12 +411,4 @@ body > .page-head {
   position: relative;
 
   height: 50px;
-}
-
-.gmail-signin img {
-  position: absolute;
-  width: 2.4rem;
-  height: 2.4rem;
-  bottom: 13px;
-  left: 140px;
 }

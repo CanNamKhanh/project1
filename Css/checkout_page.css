@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 100%;
+  max-width: 1520px;
   height: 1201px;
   font-family: "Gordita", sans-serif;
   font-size: 1.5rem;
@@ -27,6 +27,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+a {
+  text-decoration: none;
 }
 h1 {
   text-decoration: none;
@@ -339,6 +342,7 @@ div[class*="part"] label {
   bottom: 0;
   left: 0;
   align-items: center;
+  cursor: pointer;
 }
 .continue-shopping img {
   /* width: 14px; */
@@ -578,6 +582,7 @@ div[class*="part"] label {
   position: absolute;
   right: 0;
   bottom: 0;
+  cursor: pointer;
 
   font-weight: 400;
   font-size: 1.8rem;
@@ -808,19 +813,19 @@ div[class*="part"] label {
 }
 .continue-to-checkout:hover {
   background-color: #da9c0d;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .next-page:hover {
   background-color: #da9c0d;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .add-address button:hover {
   background-color: #da9c0d;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .pay:hover {
   background-color: #da9c0d;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .check-product {
   width: 201px;
@@ -846,6 +851,9 @@ div[class*="part"] label {
   border: 1px solid;
 }
 .action-box .action .save img {
+  cursor: pointer;
+}
+.action-box .action .delete img {
   cursor: pointer;
 }
 .user-info > div {

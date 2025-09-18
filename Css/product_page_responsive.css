@@ -13,10 +13,15 @@
   }
   .product-info {
     height: 100%;
+    /* width: 100%; */
   }
   .add-box {
     left: 0;
     top: 250px;
+    width: 100%;
+  }
+  .info-box {
+    width: 85%;
   }
 }
 @media screen and (max-width: 1219.98px) {
