@@ -33,6 +33,7 @@ h4 {
 }
 
 body {
+  overscroll-behavior: none;
   /* width: 100%; */
   max-width: 1520px;
   height: 1201px;

@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  overscroll-behavior: none;
   max-width: 1520px;
   height: 1201px;
   font-family: "Gordita", sans-serif;
