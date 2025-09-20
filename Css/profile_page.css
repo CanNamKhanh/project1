@@ -20,6 +20,57 @@ body {
   position: relative;
   background-color: #f6f6f6;
 }
+.overlay {
+  width: 86.666666666%;
+  background-color: white;
+  height: 205%;
+  position: absolute;
+  z-index: 9999999999;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* display: block; */
+}
+.second-lay {
+  width: 100%;
+  height: 300vh;
+  background-color: #1a162e00;
+  position: absolute;
+  z-index: 99999;
+}
+.overlay {
+  z-index: 999999;
+}
+.overlay .content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.overlay > .content-box > .open > img {
+  cursor: pointer;
+}
+header .content-box .shop-info .open-menu img {
+  cursor: pointer;
+}
+.overlay .content-box > div {
+  display: flex;
+  justify-content: space-between;
+}
+.overlay .content-box .grocery img {
+  height: 12px;
+}
+.overlay .content-box .beauty img {
+  height: 12px;
+}
+.overlay div.govercy img {
+  height: 12px;
+}
+#open-menu:checked + .overlay {
+  display: block !important;
+}
+#open-menu:checked ~ .second-lay {
+  display: block;
+}
 header {
   width: 100%;
   height: 9.159034138%;
@@ -738,4 +789,9 @@ a {
 }
 #personal-info:checked ~ .container .personal-info {
   display: block;
+}
+.wishlist a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
