@@ -107,7 +107,7 @@ header .content-box {
   align-items: center;
 }
 .menu > div img {
-  height: 12px;
+  height: 7px;
 }
 .menu > div p {
   font-weight: 500;
@@ -660,11 +660,29 @@ div[class*="part"] label {
   height: 50px;
   border-radius: 10px;
   padding-top: 12px;
-  padding-right: 170px;
+  padding-right: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
   border-width: 1px;
   border: 1px solid #d2d1d6;
+}
+.product-checkout
+  .submit-box
+  .input-data
+  .input-box
+  .input
+  input:focus
+  + label {
+  display: none;
+}
+.product-checkout
+  .submit-box
+  .input-data
+  .input-box
+  .input
+  input:valid
+  + label {
+  display: none;
 }
 .product-checkout .submit-box .input-data .input-box .input {
   position: relative;

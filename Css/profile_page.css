@@ -673,6 +673,14 @@ a {
   .placeholer {
   display: none;
 }
+.personal-info
+  div[class*="line-"]
+  > div[class*="part-"]
+  + .input-box
+  > input:valid
+  .placeholer {
+  display: none;
+}
 .personal-info div[class*="line-"] div[class*="part-"] {
   width: 45%;
   display: flex;

@@ -101,7 +101,7 @@ header .content-box {
   align-items: center;
 }
 .menu > div img {
-  height: 12px;
+  height: 7px;
 }
 .menu > div p {
   font-weight: 500;
@@ -412,6 +412,7 @@ div[class*="part"] label {
   padding-bottom: 10px;
   padding-left: 55px;
   width: 77%;
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 1.8rem;
@@ -422,6 +423,7 @@ div[class*="part"] label {
   border-radius: 6px;
   padding: 11px;
   border: 1px solid #d2d1d6;
+  cursor: pointer;
 }
 .reviews-box {
   width: 93.055555555%;
@@ -602,6 +604,10 @@ div[class*="part"] label {
   position: absolute;
   bottom: 30px;
   right: 30px;
+  cursor: pointer;
+}
+.your-items .box-content button:hover {
+  background-color: #d69d0d;
 }
 .your-items {
   position: absolute;
